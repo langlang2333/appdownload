@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>手机APP客户端下载</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+.my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; background:rgba(211, 216, 224, 0.67);
+    height: 67px;
+}  
+        .my-navbar a{background:transparent !important;color:#fff !important}  
+        .my-navbar a:hover {color:#45bcf9 !important;background:transparent;outline:0}  
+        .my-navbar a {transition: color 0.5s ease-in-out;}/*-webkit-transition ;-moz-transition*/  
+        .top-nav {padding:0;background:#000;}  </style>
+</head>
+
+<body>
+ 
+
+<div id="dowebok">
+
+	<div class="section header fp-auto-height">
+		
+	</div>
+
+	<div class="section banner active">
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">  
+        <div class="container-fluid">  
+          <div class="navbar-header">  
+           
+            </div>  
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">  
+                <ul class="nav navbar-nav" style="float:right">  
+                  
+                    <li>  
+                   
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </nav> 
+		<div class="center-wrap">
+			<div class="desc banner-desc">
+			<h1 style="
+    margin-right: 30px;">智慧新日</h1>
+            <h2 style="
+    margin-left: 100px;">客户端下载</h2>
+            	
+			</div>
+		</div>
+	</div>
+
+	<div class="section thin">
+		<div class="center-wrap">
+			<div class="desc thin-desc">
+		      <h1>智慧绿源</h1>
+            <h2>客户端下载</h2>
+			</div>
+			<div class="thin-img">
+			
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="section net">
+		<div class="center-wrap">
+			<div class="desc net-desc">
+				<h1>台铃云</h1>
+            <h2>客户端下载</h2>
+			</div>
+		</div>
+		<div class="net-img">
+					</div>
+	</div>
+
+	
+
+	<div class="section battery">
+		<div class="center-wrap">
+			<div class="desc battery-desc">
+				<h1 style="color:#FFF">骑多多</h1>
+            <h2 style="color:#FFF">客户端下载</h2>
+			</div>
+		</div>
+		<div class="battery-img">
+			
+		</div>
+	</div>
+
+	<div class="section flyme">
+		<div class="center-wrap">
+			<div class="desc flyme-desc
+            active"
+            
+            
+            >
+			<h1>乐感智能</h1>
+            <h2>客户端下载</h2>	
+			</div>
+		</div>
+		<div class="flyme-img">
+			
+		</div>
+	</div>
+
+	<div class="section footer fp-auto-height">
+		<div class="footer-link">
+			<div class="center-wrap">
+				
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+$(function(){
+	var $mlNav = $('.ml-nav');
+	$('#dowebok').fullpage({
+		verticalCentered: !1,
+		navigation: !0,
+		onLeave: function(index, nextIndex, direction){
+			if(index == 2 && direction == 'up'){
+				$mlNav.animate({
+					top: 80
+				}, 680);
+			} else if(index == 1 && direction == 'down') {
+				$mlNav.animate({
+					top: 0
+				}, 400);
+			} else if(index == 3 && direction == 'up') {
+				$mlNav.animate({
+					top: 0
+				}, 500);
+			} else {
+				$mlNav.animate({
+					top: -66
+				}, 400);
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>
