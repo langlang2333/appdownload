@@ -1,152 +1,235 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>手机APP客户端下载</title>
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <style>
-.my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; background:rgba(211, 216, 224, 0.67);
-    height: 67px;
-}  
-        .my-navbar a{background:transparent !important;color:#fff !important}  
-        .my-navbar a:hover {color:#45bcf9 !important;background:transparent;outline:0}  
-        .my-navbar a {transition: color 0.5s ease-in-out;}/*-webkit-transition ;-moz-transition*/  
-        .top-nav {padding:0;background:#000;}  </style>
+.msgbtns {
+
+    float: right;
+    width: 238px;
+
+}
+
+.msgbtns a {
+
+    display: block;
+    width: 224px;
+    height: 54px;
+    overflow: hidden;
+    text-indent: -999px;
+	background: transparent url(img/downbtns1.png)  no-repeat 0 0;}
+	.msgbtns a.iph {
+    margin-bottom: 23px;
+    background-position: 0 0;
+	
+}
+.msgbtns a.iph:hover {
+
+    background-position: 0 -55px;
+        background-position-x: 0px;
+        background-position-y: -55px;
+		
+
+}
+	.msgbtns a.and {
+    background-position: 0 -110px;
+}
+.msgbtns a.and:hover {
+
+    background-position: 0 -165px;
+        background-position-x: 0px;
+        background-position-y: -165px;
+		
+
+}
+
+
+</style>
 </head>
 
 <body>
- 
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-<div id="dowebok">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/buttons.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slides.jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-	<div class="section header fp-auto-height">
-		
-	</div>
-
-	<div class="section banner active">
-    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">  
-        <div class="container-fluid">  
-          <div class="navbar-header">  
-           
-            </div>  
-            <div class="collapse navbar-collapse" id="example-navbar-collapse">  
-                <ul class="nav navbar-nav" style="float:right">  
-                  
-                    <li>  
-                   
-                    </li>  
-                </ul>  
-            </div>  
-        </div>  
-    </nav> 
-		<div class="center-wrap">
-			<div class="desc banner-desc">
-			<h1 style="
-    margin-right: 30px;">智慧新日</h1>
-            <h2 style="
-    margin-left: 100px;">客户端下载</h2>
-            	
-			</div>
-		</div>
-	</div>
-
-	<div class="section thin">
-		<div class="center-wrap">
-			<div class="desc thin-desc">
-		      <h1>智慧绿源</h1>
-            <h2>客户端下载</h2>
-			</div>
-			<div class="thin-img">
-			
-			</div>
-		</div>
-	</div>
-
-	
-	<div class="section net">
-		<div class="center-wrap">
-			<div class="desc net-desc">
-				<h1>台铃云</h1>
-            <h2>客户端下载</h2>
-			</div>
-		</div>
-		<div class="net-img">
-					</div>
-	</div>
-
-	
-
-	<div class="section battery">
-		<div class="center-wrap">
-			<div class="desc battery-desc">
-				<h1 style="color:#FFF">骑多多</h1>
-            <h2 style="color:#FFF">客户端下载</h2>
-			</div>
-		</div>
-		<div class="battery-img">
-			
-		</div>
-	</div>
-
-	<div class="section flyme">
-		<div class="center-wrap">
-			<div class="desc flyme-desc
-            active"
-            
-            
-            >
-			<h1>乐感智能</h1>
-            <h2>客户端下载</h2>	
-			</div>
-		</div>
-		<div class="flyme-img">
-			
-		</div>
-	</div>
-
-	<div class="section footer fp-auto-height">
-		<div class="footer-link">
-			<div class="center-wrap">
+<div id="banner-box" style="height:100%">
+	<div class="banner-nav banner-nav-abs">
+		<div class="banner-inner png" style="padding-left:180px">
+			<ul>
+				<li><div></div><a href="javascript:;" class="bg1"><span class="png"></span>智慧新日</a></li>
+				<li><div></div><a href="javascript:;" class="bg2"><span class="png"></span>智慧绿源</a></li>
+				<li><div></div><a href="javascript:;" class="bg3"><span class="png"></span>台铃云</a></li>
+				<li><div></div><a href="javascript:;" class="bg4"><span class="png"></span>骑多多</a></li>
+				<li><div></div><a href="javascript:;" class="bg5"><span class="png"></span>乐感智能</a></li>
 				
-			</div>
+			</ul>
 		</div>
-		
+	</div>
+	<div class="banner-list">
+		<!--活动-->
+		<li style="width:100vh; height:100vh;background: url(img/p3_bg.jpg) rebeccapurple">
+			<div class="animate-box png">
+				<div class="t-d">
+					<h2 style="font-size:45px">智慧新日</h2>
+					<br />
+					<p style="font-size:32px">
+					客户端下载
+                   </p>
+                  <div style="font-size:16px; margin-top:50px"><p>用手机扫描左侧二维码，或选择适合你的手机系统下载。</p></div> 
+				<div><img src="img/qr.png" width="116" height="116" style="
+    margin-right: 380px;
+    margin-top: 30px;
+" />
+<div class="msgbtns" style="margin-top: -120px; margin-right:40px;">
+                <a href="https://itunes.apple.com/cn/app/xing-che-wei-shi/id736544925?mt=8" target="_blank" class="iph forTcss" name="im.mb53.downIphone">iPhone</a>
+                <a href="http://openbox.mobilem.360.cn/index/d/sid/1795375" class="and forTcss" name="im.mb53.downAndroid">Android</a>
+            </div>
+</div>	
+                <div class="number" style="font-size:16px; margin-top:40px">
+                <p style="padding-left:10px; font-weight:600;">免费发送到手机</p> 
+                <div style="margin-top: -60px;"> <input id="mobile_input" maxlength="11" type="text" value="&nbsp;&nbsp;请输入手机号码" onblur="if(this.value==''){this.value='&nbsp;&nbsp;请输入手机号码';this.style.color='#666'}" onfocus="if(this.value=='&nbsp;&nbsp;请输入手机号码'){this.value=''}" style="margin-left:0px; width:200px; height:40px; border-bottom-left-radius:5px;border-top-left-radius:5px;margin-right: 295px;margin-top: 60px; color:#666; font-size:16px;">
+                  </div>
+                  <div style="margin-top: -40px;height: 35px;margin-left: -25px;">
+                  <button type="button" id="sendAppURLBtn" class="button button-glow button-rounded button-caution" style="width:65px; border-bottom-left-radius:0px;border-top-left-radius:0px"><strong>发送</strong></button></div>
+                 </div>
+                        
+				</div>
+                
+				<div class="animate-img"><img src="img/phone_1111.png" width="251" height="493" /><img src="img/phone_22222.png" width="249" height="493" /></div>
+			</div>
+		</li>
+		<li style="background: #0C6">
+			<div class="animate-box png">
+				<div class="t-d">
+					<h2 style="font-size:45px">智慧绿源</h2>
+					<br />
+					<p style="font-size:32px">
+					客户端下载
+                   </p>
+                  <div style="font-size:16px; margin-top:50px"><p>用手机扫描左侧二维码，或选择适合你的手机系统下载。</p></div> 
+				<div><img src="img/qr.png" width="116" height="116" style="
+    margin-right: 380px;
+    margin-top: 30px;
+" />
+<div class="msgbtns1" style="margin-top: -120px; margin-right:40px;">
+                <a href="https://itunes.apple.com/cn/app/xing-che-wei-shi/id736544925?mt=8" target="_blank" class="iph forTcss" name="im.mb53.downIphone">iPhone</a>
+                <a href="http://openbox.mobilem.360.cn/index/d/sid/1795375" class="and forTcss" name="im.mb53.downAndroid">Android</a>
+            </div>
+</div>	
+                <div class="number" style="font-size:16px; margin-top:40px">
+                <p style="padding-left:10px; font-weight:600;">免费发送到手机</p> 
+                <div style="margin-top: -60px;"> <input id="mobile_input" maxlength="11" type="text" value="&nbsp;&nbsp;请输入手机号码" onblur="if(this.value==''){this.value='&nbsp;&nbsp;请输入手机号码';this.style.color='#666'}" onfocus="if(this.value=='&nbsp;&nbsp;请输入手机号码'){this.value=''}" style="margin-left:0px; width:200px; height:40px; border-bottom-left-radius:5px;border-top-left-radius:5px;margin-right: 295px;margin-top: 60px; color:#666; font-size:16px;">
+                  </div>
+                  <div style="margin-top: -40px;height: 35px;margin-left: -25px;">
+                  <button type="button" id="sendAppURLBtn" class="button button-glow button-rounded button-caution" style="width:65px; border-bottom-left-radius:0px;border-top-left-radius:0px"><strong>发送</strong></button></div>
+                 </div>
+                        
+				</div>
+                
+				<div class="animate-img"><img src="img/phone_1111.png" width="251" height="493" /><img src="img/phone_22222.png" width="249" height="493" /></div>
+			</div>
+		</li>
+		<li style="background: url(img/p4_bg.jpg)">
+			<div class="animate-box png">
+				<div class="t-d">
+					<h2 style="font-size:45px">台铃云</h2>
+					<br />
+					<p style="font-size:32px">
+					客户端下载
+                   </p>
+                  <div style="font-size:16px; margin-top:50px"><p>用手机扫描左侧二维码，或选择适合你的手机系统下载。</p></div> 
+				<div><img src="img/qr.png" width="116" height="116" style="
+    margin-right: 380px;
+    margin-top: 30px;
+" />
+<div class="msgbtns2" style="margin-top: -120px; margin-right:40px;">
+                <a href="https://itunes.apple.com/cn/app/xing-che-wei-shi/id736544925?mt=8" target="_blank" class="iph forTcss" name="im.mb53.downIphone">iPhone</a>
+                <a href="http://openbox.mobilem.360.cn/index/d/sid/1795375" class="and forTcss" name="im.mb53.downAndroid">Android</a>
+            </div>
+</div>	
+                <div class="number" style="font-size:16px; margin-top:40px">
+                <p style="padding-left:10px; font-weight:600;">免费发送到手机</p> 
+                <div style="margin-top: -60px;"> <input id="mobile_input" maxlength="11" type="text" value="&nbsp;&nbsp;请输入手机号码" onblur="if(this.value==''){this.value='&nbsp;&nbsp;请输入手机号码';this.style.color='#666'}" onfocus="if(this.value=='&nbsp;&nbsp;请输入手机号码'){this.value=''}" style="margin-left:0px; width:200px; height:40px; border-bottom-left-radius:5px;border-top-left-radius:5px;margin-right: 295px;margin-top: 60px; color:#666; font-size:16px;">
+                  </div>
+                  <div style="margin-top: -40px;height: 35px;margin-left: -25px;">
+                  <button type="button" id="sendAppURLBtn" class="button button-glow button-rounded button-caution" style="width:65px; border-bottom-left-radius:0px;border-top-left-radius:0px"><strong>发送</strong></button></div>
+                 </div>
+                        
+				</div>
+                
+				<div class="animate-img"><img src="img/phone_1111.png" width="251" height="493" /><img src="img/phone_22222.png" width="249" height="493" /></div>
+			</div>
+		</li>
+		<li style="background: url(img/p5_bg.jpg)">
+			<div class="animate-box png">
+				<div class="t-d">
+					<h2 style="font-size:45px">骑多多</h2>
+					<br />
+					<p style="font-size:32px">
+					客户端下载
+                   </p>
+                  <div style="font-size:16px; margin-top:50px"><p>用手机扫描左侧二维码，或选择适合你的手机系统下载。</p></div> 
+				<div><img src="img/qr.png" width="116" height="116" style="
+    margin-right: 380px;
+    margin-top: 30px;
+" />
+<div class="msgbtns3" style="margin-top: -120px; margin-right:40px;">
+                <a href="https://itunes.apple.com/cn/app/xing-che-wei-shi/id736544925?mt=8" target="_blank" class="iph forTcss" name="im.mb53.downIphone">iPhone</a>
+                <a href="http://openbox.mobilem.360.cn/index/d/sid/1795375" class="and forTcss" name="im.mb53.downAndroid">Android</a>
+            </div>
+</div>	
+                <div class="number" style="font-size:16px; margin-top:40px">
+                <p style="padding-left:10px; font-weight:600;">免费发送到手机</p> 
+                <div style="margin-top: -60px;"> <input id="mobile_input" maxlength="11" type="text" value="&nbsp;&nbsp;请输入手机号码" onblur="if(this.value==''){this.value='&nbsp;&nbsp;请输入手机号码';this.style.color='#666'}" onfocus="if(this.value=='&nbsp;&nbsp;请输入手机号码'){this.value=''}" style="margin-left:0px; width:200px; height:40px; border-bottom-left-radius:5px;border-top-left-radius:5px;margin-right: 295px;margin-top: 60px; color:#666; font-size:16px;">
+                  </div>
+                  <div style="margin-top: -40px;height: 35px;margin-left: -25px;">
+                  <button type="button" id="sendAppURLBtn" class="button button-glow button-rounded button-caution" style="width:65px; border-bottom-left-radius:0px;border-top-left-radius:0px"><strong>发送</strong></button></div>
+                 </div>
+                        
+				</div>
+                
+				<div class="animate-img"><img src="img/phone_1111.png" width="251" height="493" /><img src="img/phone_22222.png" width="249" height="493" /></div>
+			</div>
+		</li>
+		<li style="background: url(img/636ac37125119d607b3d09c1de0d42d1.png)">
+			<div class="animate-box png">
+				<div class="t-d">
+					<h2 style="font-size:45px">乐感智能</h2>
+					<br />
+					<p style="font-size:32px">
+					客户端下载
+                   </p>
+                  <div style="font-size:16px; margin-top:50px"><p>用手机扫描左侧二维码，或选择适合你的手机系统下载。</p></div> 
+				<div><img src="img/qr.png" width="116" height="116" style="
+    margin-right: 380px;
+    margin-top: 30px;
+" />
+<div class="msgbtns4" style="margin-top: -120px; margin-right:40px;">
+                <a href="https://itunes.apple.com/cn/app/xing-che-wei-shi/id736544925?mt=8" target="_blank" class="iph forTcss" name="im.mb53.downIphone">iPhone</a>
+                <a href="http://openbox.mobilem.360.cn/index/d/sid/1795375" class="and forTcss" name="im.mb53.downAndroid">Android</a>
+            </div>
+</div>	
+                <div class="number" style="font-size:16px; margin-top:40px">
+                <p style="padding-left:10px; font-weight:600;">免费发送到手机</p> 
+                <div style="margin-top: -60px;"> <input id="mobile_input" maxlength="11" type="text" value="&nbsp;&nbsp;请输入手机号码" onblur="if(this.value==''){this.value='&nbsp;&nbsp;请输入手机号码';this.style.color='#666'}" onfocus="if(this.value=='&nbsp;&nbsp;请输入手机号码'){this.value=''}" style="margin-left:0px; width:200px; height:40px; border-bottom-left-radius:5px;border-top-left-radius:5px;margin-right: 295px;margin-top: 60px; color:#666; font-size:16px;">
+                  </div>
+                  <div style="margin-top: -40px;height: 35px;margin-left: -25px;">
+                  <button type="button" id="sendAppURLBtn" class="button button-glow button-rounded button-caution" style="width:65px; border-bottom-left-radius:0px;border-top-left-radius:0px"><strong>发送</strong></button></div>
+                 </div>
+                        
+				</div>
+                
+				<div class="animate-img"><img src="img/phone_1111.png" width="251" height="493" /><img src="img/phone_22222.png" width="249" height="493" /></div>
+			</div>
+		</li>
 		
 	</div>
 </div>
-
-<script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/jquery.fullPage.js"></script>
-<script>
-$(function(){
-	var $mlNav = $('.ml-nav');
-	$('#dowebok').fullpage({
-		verticalCentered: !1,
-		navigation: !0,
-		onLeave: function(index, nextIndex, direction){
-			if(index == 2 && direction == 'up'){
-				$mlNav.animate({
-					top: 80
-				}, 680);
-			} else if(index == 1 && direction == 'down') {
-				$mlNav.animate({
-					top: 0
-				}, 400);
-			} else if(index == 3 && direction == 'up') {
-				$mlNav.animate({
-					top: 0
-				}, 500);
-			} else {
-				$mlNav.animate({
-					top: -66
-				}, 400);
-			}
-		}
-	});
-});
-</script>
 
 </body>
 </html>
