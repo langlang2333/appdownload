@@ -7,22 +7,22 @@
 		generatePagination:false,
 		paginationClass:"banner-nav",
 		container: 'banner-list',
-		/*play: 10000,
-		pause:6000,*/
+		/*play: 12000,
+		pause:8000,*/
 		effect:"fade",
 		slideEasing:"easeInOutQuart",
 		slidesLoaded: function() {
 		},
 		animationStart: function(current){
 		$('.t-d').animate({
-			top:100,left:0
+			top:130,left:0
 		});
-		$('.animate-img').animate({top:50,right:0});
+		$('.animate-img').animate({top:120,right:0});
 
 	},
 		animationComplete: function(current){
-			$('.t-d').animate({top:100,left:20});
-			$('.animate-img').animate({top:50,right:50});
+			$('.t-d').animate({top:130,left:20});
+			$('.animate-img').animate({top:120,right:40});
 		}
 	});
 
